@@ -1,0 +1,12 @@
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\bin\Debug\netcoreapp2.0\TravelForum.Service.deps.json
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\bin\Debug\netcoreapp2.0\TravelForum.Service.dll
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\bin\Debug\netcoreapp2.0\TravelForum.Service.pdb
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\bin\Debug\netcoreapp2.0\TravelForum.Data.dll
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\bin\Debug\netcoreapp2.0\TravelForum.Data.pdb
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\obj\Debug\netcoreapp2.0\TravelForum.Service.csprojAssemblyReference.cache
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\obj\Debug\netcoreapp2.0\TravelForum.Service.csproj.CoreCompileInputs.cache
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\obj\Debug\netcoreapp2.0\TravelForum.Service.AssemblyInfoInputs.cache
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\obj\Debug\netcoreapp2.0\TravelForum.Service.AssemblyInfo.cs
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\obj\Debug\netcoreapp2.0\TravelForum.Service.csproj.CopyComplete
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\obj\Debug\netcoreapp2.0\TravelForum.Service.dll
+C:\Users\kk\source\repos\TravelForum\TravelForum.Service\obj\Debug\netcoreapp2.0\TravelForum.Service.pdb

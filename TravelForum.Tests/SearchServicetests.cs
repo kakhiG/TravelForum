@@ -23,7 +23,7 @@ namespace TravelForum.Tests
 
             using (var ctx = new ApplicationDbContext(options))
             {
-                ctx.forums.Add(new Forum
+                ctx.Forums.Add(new Forum
                 {
 
                     Id = 19
@@ -31,7 +31,7 @@ namespace TravelForum.Tests
 
                 ctx.Posts.Add(new Post
                 {
-                    Forum =ctx.forums.Find(19),
+                    Forum =ctx.Forums.Find(19),
                     Id=23523,
                     Title="First Post",
                     Content="Coffee"
@@ -39,7 +39,7 @@ namespace TravelForum.Tests
                 });
                 ctx.Posts.Add(new Post
                 {
-                    Forum = ctx.forums.Find(19),
+                    Forum = ctx.Forums.Find(19),
                     Id = -2144,
                     Title = "Coffee",
                     Content = "Some Content"
@@ -47,7 +47,7 @@ namespace TravelForum.Tests
                 });
                 ctx.Posts.Add(new Post
                 {
-                    Forum = ctx.forums.Find(19),
+                    Forum = ctx.Forums.Find(19),
                     Id = 23523,
                     Title = "First Post",
                     Content = "Coffee"

@@ -1,9 +1,0 @@
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\bin\Debug\netcoreapp2.0\TravelForum.Data.deps.json
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\bin\Debug\netcoreapp2.0\TravelForum.Data.dll
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\obj\Debug\netcoreapp2.0\TravelForum.Data.csprojAssemblyReference.cache
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\obj\Debug\netcoreapp2.0\TravelForum.Data.csproj.CoreCompileInputs.cache
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\obj\Debug\netcoreapp2.0\TravelForum.Data.AssemblyInfoInputs.cache
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\obj\Debug\netcoreapp2.0\TravelForum.Data.AssemblyInfo.cs
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\bin\Debug\netcoreapp2.0\TravelForum.Data.pdb
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\obj\Debug\netcoreapp2.0\TravelForum.Data.dll
-C:\Users\kk\source\repos\TravelForum\TravelForum.Data\obj\Debug\netcoreapp2.0\TravelForum.Data.pdb

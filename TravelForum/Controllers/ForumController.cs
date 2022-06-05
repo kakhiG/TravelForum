@@ -77,13 +77,28 @@ namespace TravelForum.Controllers
             return RedirectToAction("Topic", new { id, searchQuery });
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             var model = new AddForumModel();
             return View(model);
         }
 
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> AddForum(AddForumModel model)
+        {
+            var forum = new Forum
+            {
+                Title = model.Title,
+                Description = model.Description,
+                ImageUrl = model.ImageUrl
+            };
+            await _forumService.Create(forum);
+
+            return RedirectToAction("Index");
+        }
 
         private ForumListingModel BuildForumListing(Post post)
         {

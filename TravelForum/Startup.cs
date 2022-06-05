@@ -38,10 +38,13 @@ namespace TravelForum
             services.AddScoped<IApplicationUser, ApplicationUserService>();
 
             services.AddScoped<DataSeeder>();
-            services.AddMvc(options =>
-            {
-                options.EnableEndpointRouting = false;
-            });
+            services
+                .AddMvc(options =>
+                {
+                    options.EnableEndpointRouting = false;
+                })
+                .AddRazorRuntimeCompilation();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

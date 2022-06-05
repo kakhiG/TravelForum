@@ -12,8 +12,10 @@
                 <span>You must be a <a asp-controller="Account" asp-action="Register">registered member</a> to create a new post.</span>
             }
         </p>
+        <a asp-controller="Forum" asp-action="Create">Add new forum</a>
     </div>
 </div>
+
 <table class="table table-hover" id="forumIndexTable">
         <tbody>
             @foreach (var forum in Model.ForumList)

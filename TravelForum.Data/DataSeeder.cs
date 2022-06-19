@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,12 +17,17 @@ namespace TravelForum.Data
             _context = context;
         }
 
-        public  Task SeedSuperUser()
+        public void MigrateDb()
+        {
+            _context.Database.Migrate();
+        }
+
+        public Task SeedSuperUser()
         {
             var roleStore = new RoleStore<IdentityRole>(_context);
             var userStore = new UserStore<ApplicationUser>(_context);
 
-            
+
             var user = new ApplicationUser
             {
                 UserName = "ForumAdmin",
@@ -46,21 +52,21 @@ namespace TravelForum.Data
                     NormalizedName = "Admin"
                 });
             }
-           var hasSuperUser =
-                _context.Users.Any(u => u.NormalizedUserName == user.UserName);
+            var hasSuperUser =
+                 _context.Users.Any(u => u.NormalizedUserName == user.UserName);
 
-           if (!hasSuperUser)
-           {
-                   userStore.CreateAsync(user);
-                   userStore.AddToRoleAsync(user, "Admin");
-           }
+            if (!hasSuperUser)
+            {
+                userStore.CreateAsync(user);
+                userStore.AddToRoleAsync(user, "Admin");
+            }
 
             _context.SaveChangesAsync();
 
-           return Task.CompletedTask;
+            return Task.CompletedTask;
 
-            
-           
+
+
         }
     }
 }

@@ -61,6 +61,7 @@ namespace TravelForum
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            dataSeeder.MigrateDb();
             dataSeeder.SeedSuperUser();
 
             app.UseStaticFiles();

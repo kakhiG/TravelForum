@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject UserManager<TravelForum.Data.Models.ApplicationUser> UserManager
-@inject SignInManager<TravelForum.Data.Models.ApplicationUser>  SignInManager
+@inject SignInManager<TravelForum.Data.Models.ApplicationUser> SignInManager
 
 
 <!DOCTYPE html>
@@ -10,16 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - TravelForum</title>
 
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-    </environment>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet"  />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -60,29 +52,29 @@
                 }
                 @if (SignInManager.IsSignedIn(User))
                 {
-                    <form  asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+                    <form asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                               <a asp-controller="Profile" 
-                                asp-action="Detail" 
-                                asp-route-id="@UserManager.GetUserId(User)">
-                                @UserManager.GetUserName(User)
-                              </a>
+                                <a asp-controller="Profile"
+                               asp-action="Detail"
+                               asp-route-id="@UserManager.GetUserId(User)">
+                                    @UserManager.GetUserName(User)
+                                </a>
                             </li>
                             <li>
                                 <button type="submit" class="btn btn-link navbar-btn navbar-link">
                                     Sign Out
                                 </button>
                             </li>
-                         </ul>
+                        </ul>
                     </form>
-                 }
-             </div>
+                }
+            </div>
         </div>
     </nav>
     <div class="container body-content">
         @RenderBody()
-   </div>
+    </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>

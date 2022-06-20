@@ -10,9 +10,14 @@ namespace TravelForum.Data.Models
         public string Content { get; set; }
         public DateTime Created { get; set; }
 
-        public virtual ApplicationUser User { get; set; }
-        public virtual Forum Forum { get; set; }
+        public ApplicationUser User { get; set; }
+        public Forum Forum { get; set; }
 
-        public virtual IEnumerable<PostReply> Replies { get; set; }
+        public IEnumerable<PostReply> Replies { get; set; }
+
+        public Post()
+        {
+            Replies = new List<PostReply>();
+        }
     }
 }

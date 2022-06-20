@@ -9,6 +9,7 @@ namespace TravelForum.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+            this.ChangeTracker.LazyLoadingEnabled = false;
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }

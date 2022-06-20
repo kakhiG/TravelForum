@@ -98,7 +98,7 @@ namespace TravelForum.Controllers
             await _forumService.Create(forum);
 
             return RedirectToAction("Index");
-        \}
+        }
 
         private ForumListingModel BuildForumListing(Post post)
         {
